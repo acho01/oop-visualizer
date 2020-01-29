@@ -10,6 +10,8 @@ function homePageTyper(){
         '                Welcome to oop modern class.\n' +
         '                With this tool, you can graph classes\n' +
         '                and see the relations between them.\n' +
+        '                Choose class templates from Dropdown,\n' +
+        '                Generate classes and press Graph.\n' +
         '                OOP practice has never been that fun.\n' +
         '                Good luck :) \n' +
         '                \n' +

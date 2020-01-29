@@ -6,18 +6,20 @@ document.querySelector('.nav-bar').addEventListener("click", () => {
             let btn = `#code_btn_${i}`;
             let btn_txt = document.querySelector(btn).innerHTML;
 
+            let box_txt;
+            let graph_block = document.querySelector(`#class_box_${i}`).querySelector("h1");
             if (clazz != null && btn_txt !== 'Add class') {
-                let graph_block = document.querySelector(`#class_box_${i}`).querySelector("h1");
                 graph_block.innerHTML = `${clazz.name} [${clazz.type}]`;
+                box_txt = `${clazz.name} [${clazz.type}]`;
+                drawArrows(template);
+            } else if (btn_txt === 'Add class'){
+                box_txt = `...`;
             }
+            graph_block.innerHTML = box_txt;
+
         }
     }
 });
 
 
-let para = document.createElement("p");
-let node = document.createTextNode("This is new.");
-para.appendChild(node);
 
-let element = document.getElementsByClassName("body");
-element.appendChild(para);

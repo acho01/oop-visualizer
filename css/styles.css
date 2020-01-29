@@ -251,16 +251,14 @@ dropbox
 .arrow {
     position: absolute;
     border: solid black;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 8px;
+    border-width: 0 10px 10px 0;
+    display: none;
+    padding: 20px;
 }
-
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -275,3 +273,48 @@ dropbox
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+#a1 {
+    margin-left: 59%;
+    margin-top: 20.5%;
+}
+#a2 {
+    margin-left: 65%;
+    margin-top: 20%;
+}
+#a1-2 {
+    margin-left: 82%;
+    margin-top: 20.5%;
+}
+#a2-2 {
+    margin-left: 88%;
+    margin-top: 20%;
+}
+
+#a3 {
+    margin-left: 73.5%;
+    margin-top: 10%;
+}
+#a4 {
+    margin-left: 73.5%;
+    margin-top: 14%;
+}
+#a3-2 {
+    margin-left: 73.5%;
+    margin-top: 25%;
+}
+#a4-2 {
+    margin-left: 73.5%;
+    margin-top: 29%;
+}
+
+/*.arrow #a2{*/
+/*    animation: blinker 1s linear infinite;*/
+/*}*/
+
+@keyframes blinker {
+    100% {
+        opacity: 10%;
+    }
+}
+
