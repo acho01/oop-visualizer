@@ -1,0 +1,34 @@
+/*
+Fonts
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+:root {
+    --dark-shadow: 0 5px 15px rgba(3, 0, 0, 0.2);
+    --font: "Roboto", sans-serif;
+}
+body {
+    background-color: #ffe227;
+    font-family: var(--font);
+}
+
+/*
+nav bar
+ */
+nav {
+    height: 50px;
+    width: 500px;
+    display: grid;
+    margin: auto;
+    align-items: center;
+}
+
+.nav-bar {
+    background: #eb596e;
+    border-radius: 20px;
+    box-shadow: var(--dark-shadow);
+    text-align: center;
+    vertical-align: middle;
+ }
+
