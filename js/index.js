@@ -1,4 +1,3 @@
-
 showOverlay();
 homePageTyper();
 document.querySelector("#overlay").addEventListener("click", () => hideOverlay());
@@ -6,6 +5,7 @@ document.querySelector("#overlay").addEventListener("click", () => hideOverlay()
 
 
 function homePageTyper(){
+
     let welcomeMessage = 'Hello my curious alien fella.\n' +
         '                Welcome to oop modern class.\n' +
         '                With this tool, you can graph classes\n' +
@@ -31,6 +31,8 @@ function type(text, elementId) {
 }
 
 function hideOverlay() {
+    let audio = new Audio("../resources/audio/close.mp3");
+    audio.play();
     document.querySelector("#overlay").style.display='none';
 }
 
