@@ -43,33 +43,40 @@ creates darkness when overlay message pops up
 /*
 nav bar
  */
-nav {
-    height: 50px;
-    width: 500px;
-    display: grid;
-    margin: auto;
+.nav-container {
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-bar {
     background: #eb596e;
     border-radius: 20px;
+    width: 350px;
     box-shadow: var(--dark-shadow);
     text-align: center;
     vertical-align: middle;
  }
 
-/*
-modal
- */
-.info-modal {
-    background-color: #f8647b;
-    border-radius: 10px;
-    position: fixed;
-    top: 35%;
-    left: 35%;
-    width: 30%;
-    height: 28%;
- }
+.action-container {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
 
+.action-container div{
+    border: 1px #ccc solid;
+    padding: 18%;
+    width: 50%;
 
+}
+
+.code-block {
+
+}
+.graph-block {
+
+}
+.box3 {
+
+}
