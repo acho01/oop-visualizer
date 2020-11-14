@@ -58,25 +58,25 @@ nav bar
     vertical-align: middle;
  }
 
-.action-container {
+.main_container {
     display: flex;
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
-
-.action-container div{
-    border: 1px #ccc solid;
-    padding: 18%;
-    width: 50%;
-
+.code_container {
+    background: orangered;
 }
-
-.code-block {
-
+.graph_container {
+    background: yellowgreen;
 }
-.graph-block {
-
+.blue {
+    height: 30px;
+    background: steelblue;
 }
-.box3 {
-
+.green {
+    height: 30px;
+    background: green;
+}
+.main_container div {
+    font-size: 5vw;
+    padding: .5em;
+    flex: 1;
 }
