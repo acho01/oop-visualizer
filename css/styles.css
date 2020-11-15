@@ -63,20 +63,21 @@ nav bar
 }
 .code_container {
     background: orangered;
+    display: flex;
+    flex-direction: column;
 }
 .graph_container {
     background: yellowgreen;
 }
-.blue {
-    height: 30px;
+.code {
+    height: 20px;
+    width: 60%;
     background: steelblue;
-}
-.green {
-    height: 30px;
-    background: green;
+    margin-top: 20px;
+    margin-left: 18%;
 }
 .main_container div {
     font-size: 5vw;
-    padding: .5em;
+    padding: 20px;
     flex: 1;
 }
