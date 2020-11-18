@@ -81,3 +81,13 @@ nav bar
     padding: 20px;
     flex: 1;
 }
+
+.code-input {
+    position: absolute;
+    left: 32%;
+    bottom: 30%;
+    height: 500px;
+    width: 700px;
+    background-color: aquamarine;
+    z-index: 2;
+}
