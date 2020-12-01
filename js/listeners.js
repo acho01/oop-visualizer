@@ -16,6 +16,18 @@ for (let i = 1; i <= 4; i++) {
     });
 }
 
+//init code close button listeners
+for (let i = 1; i <= 4; i++) {
+    var btn = `#code_close_button_${i}`;
+    document.querySelector(btn).addEventListener("click", () => {
+        let pop = document.querySelector(getClassWindowByIndex(i));
+        let txt_area=pop.querySelector("textarea");
+        pop.style.display="none";
+        txt_area.innerHTML="";
+    });
+}
+
+
 
 
 
