@@ -31,8 +31,6 @@ for (let i = 1; i <= 4; i++) {
 
 
 
-
-
 function getClassWindowByIndex(index) {
     switch (index) {
         case 1:
