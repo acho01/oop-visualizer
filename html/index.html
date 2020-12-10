@@ -13,18 +13,22 @@
 
     <nav class="nav-container">
         <div class="dropdown">
-            <button onmouseover="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a class="my-anchor">Transports</a>
-                <a class="my-anchor">Products</a>
+            <button onmouseover="showDrop()"  class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content" onmouseleave="hideDrop()">
+                <a class="my-anchor" id="my-anchor-1">Transports</a>
+                <a class="my-anchor" id="my-anchor-2"> Products</a>
             </div>
+            <button  class="generatebtn">Generate</button>
         </div>
+        <span>
+        </span>
         <div class="nav-bar">
             <h4>OOP Class Visualizer</h4>
         </div>
     </nav>
 
     <div class="main_container">
+
         <div class="code_container">
             <div class="code_btn" id="code_btn_1">Add class</div>
             <div class="code_btn" id="code_btn_2">Add class</div>
