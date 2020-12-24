@@ -24,6 +24,8 @@ for (let i = 1; i <= 4; i++) {
         let txt_area=pop.querySelector("textarea");
         pop.style.display="none";
         txt_area.innerHTML="";
+        let code_btn = document.querySelector(`#code_btn_${i}`);
+        code_btn.innerHTML = 'Add class';
     });
 }
 
