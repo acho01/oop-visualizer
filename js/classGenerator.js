@@ -10,15 +10,18 @@ function generateClasses() {
                 dropdown.style.background= "#ffe227";
                 dropdown.style.color= "black";
                 dropdown.style.transform= "scale(1.0)";
-             }, 500);
+             }, 800);
      } else {
          let classMap = getClassMap();
-         let code_btn = document.querySelector('#code_btn_1');
-         let code_in = document.querySelector('#code-input_1');
-         let text_area = code_in.querySelector('.code_area');
-         let car = classMap.get(chosen)[0];
-         text_area.innerHTML = car.content;
-         code_btn.innerHTML = `${car.type}: ${car.name}`;
+         for (let i = 1; i <= 4; i++) {
+             let clazz = classMap.get(chosen)[i-1];
+             let code_btn = document.querySelector(`#code_btn_${i}`);
+             let code_in = document.querySelector(`#code-input_${i}`);
+             let text_area = code_in.querySelector('.code_area');
+             text_area.innerHTML = clazz.content;
+             code_btn.innerHTML = `${clazz.name}  [${clazz.type}]`;
+
+         }
     }
 
 

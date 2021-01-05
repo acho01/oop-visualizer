@@ -58,11 +58,13 @@ nav bar
     border-radius: 25px;
     border: 5px solid black;
     size: 20px;
+    font-size: large;
     width: 350px;
     box-shadow: var(--dark-shadow);
     text-align: center;
     vertical-align: middle;
- }
+    cursor: pointer;
+}
 
 .nav-bar:hover {
     background: black;
@@ -85,7 +87,7 @@ nav bar
 }
 .code_btn {
     height: 15px;
-    width: 60%;
+    width: 70%;
     border-radius: 25px;
     border: 5px solid black;
     /*background: steelblue;*/
