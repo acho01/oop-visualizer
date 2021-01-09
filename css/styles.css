@@ -79,11 +79,36 @@ nav bar
 }
 .code_container {
     /*background: orangered;*/
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 .graph_container {
-    /*background: yellowgreen;*/
+    background-color: #ffe227; /* Green */
+    border-radius: 25px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.graph_container div {
+
+}
+#box_up {
+    display: flex;
+    flex-direction: row;
+}
+#box_bottom {
+    display: flex;
+    flex-direction: row;
+}
+.class_box {
+    background-color: #ffe227; /* Green */
+    border-radius: 25px;
+    border: 5px solid black;
+    margin: 5% 10%;
+}
+.class_box h1 {
+    /*margin-bottom: 80%;*/
 }
 .code_btn {
     height: 15px;
@@ -95,7 +120,7 @@ nav bar
     margin-left: 18%;
     transition: ease-in-out 0.2s;
     cursor: pointer;
-    font-size: small;
+    font-size: 5em;
 }
 .code_btn:hover {
     background: black;
@@ -103,7 +128,7 @@ nav bar
     transform: scale(1.2);
 }
 .main_container div {
-    font-size: 5vw;
+    /*font-size: 5vw;*/
     padding: 20px;
     flex: 1;
 }
