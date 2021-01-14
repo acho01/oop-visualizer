@@ -112,3 +112,4 @@ function getTransport() {
 function getProductClasses() {
     return undefined;
 }
+

@@ -1,31 +1,29 @@
 <!doctype html>
 <title>Example</title>
 <style>
-    .main_container {
-        display: flex;
+    .arrow {
+        width: 120px;
     }
-    .code_container {
-        background: orangered;
-        display: flex;
-        flex-direction: column;
+
+    .line {
+        margin-top: 14px;
+        width: 90px;
+        background: blue;
+        height: 10px;
+        float: left;
     }
-    .graph_container {
-        background: yellowgreen;
-    }
-    .blue {
-        background: steelblue;
-    }
-    .main_container div {
-        font-size: 5vw;
-        padding: .5em;
-        color: white;
-        flex: 1;
+
+    .point {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid blue;
+        float: right;
     }
 </style>
-<div class="container">
-    <div class="red">1
-        <div class="green">1a</div>
-        <div class="blue">1b</div>
-    </div>
-    <div class="green">2</div>
+
+<div class="arrow">
+    <div class="line"></div>
+    <div class="point"></div>
 </div>
