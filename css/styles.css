@@ -318,3 +318,39 @@ dropbox
     }
 }
 
+.top-container {
+    display: flex;
+    flex-direction: column;
+}
+.footer-main {
+    margin-top: 1%;
+}
+.footer {
+    display: inline-block;
+    text-align: right;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 2%;
+    /*height: 5%;*/
+    width: 84%;
+}
+.logo {
+    border-radius: 25px;
+    border: 5px solid black;
+
+    display: inline-block;
+    text-align: right;
+    font-family: var(--font);
+    font-size: 5em;
+    margin-left: 8%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background: black;
+    color: #ffe227;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.2);
+}

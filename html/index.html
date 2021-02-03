@@ -37,31 +37,37 @@
     <div class="arrow down" id="a2-2"></div>
     <div class="arrow left" id="a3-2"></div>
     <div class="arrow right" id="a4-2"></div>
-    <div class="main_container">
+    <div class="top-container">
+        <div class="main_container">
 
-        <div class="code_container">
-            <div class="code_btn" id="code_btn_1">Add class</div>
-            <div class="code_btn" id="code_btn_2">Add class</div>
-            <div class="code_btn" id="code_btn_3">Add class</div>
-            <div class="code_btn" id="code_btn_4">Add class</div>
+            <div class="code_container">
+                <div class="code_btn" id="code_btn_1">Add class</div>
+                <div class="code_btn" id="code_btn_2">Add class</div>
+                <div class="code_btn" id="code_btn_3">Add class</div>
+                <div class="code_btn" id="code_btn_4">Add class</div>
+            </div>
+            <div class="graph_container">
+                <div class="box" id="box_up">
+                    <div class="class_box" id="class_box_1">
+                        <h1>...</h1>
+                    </div>
+                    <div class="class_box" id="class_box_2">
+                        <h1>...</h1>
+                    </div>
+                </div>
+                <div class="box" id="box_bottom">
+                    <div class="class_box" id="class_box_3">
+                        <h1>...</h1>
+                    </div>
+                    <div class="class_box" id="class_box_4">
+                        <h1>...</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="graph_container">
-            <div class="box" id="box_up">
-                <div class="class_box" id="class_box_1">
-                    <h1>...</h1>
-                </div>
-                <div class="class_box" id="class_box_2">
-                    <h1>...</h1>
-                </div>
-            </div>
-            <div class="box" id="box_bottom">
-                <div class="class_box" id="class_box_3">
-                    <h1>...</h1>
-                </div>
-                <div class="class_box" id="class_box_4">
-                    <h1>...</h1>
-                </div>
-            </div>
+        <div class="footer-main">
+            <div class="footer">Press javascript logo to test fetch api.</div>
+            <div class="logo" onclick="fetchColors()">JS</div>
         </div>
     </div>
     <div class="code-input" id="code-input_1">
@@ -108,7 +114,7 @@
             </div>
         </div>
     </div>
-    <div class="footer"></div>
+
     <script src="../js/index.js"></script>
     <script src="../js/listeners.js"></script>
     <script src="../js/dropdown.js"></script>
@@ -117,5 +123,6 @@
     <script src="../js/Clazz.js"></script>
     <script src="../js/classGrapher.js"></script>
     <script src="../js/mockDependencyGenerator.js"></script>
+    <script src="../js/fetch.js"></script>
 </body>
 </html>
