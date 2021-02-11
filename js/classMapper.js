@@ -3,7 +3,7 @@ let classMap = new Map();
 
 function getClassMap() {
     classMap.set("Transports", getTransportClassesMap());
-    classMap.set("Products", getProductClasses());
+    classMap.set("Products", getProductClassesMap());
 
     return classMap;
 }
@@ -110,6 +110,78 @@ function getTransport() {
 }
 
 function getProductClasses() {
-    return undefined;
+}
+function getProductClassesMap() {
+    let class_list = ['', '', '', ''];
+    class_list[0] = getDrinkable();
+    class_list[1] = getWine();
+    class_list[2] = getCandy();
+    class_list[3] = getProduct();
+    return class_list;
+}
+function getDrinkable() {
+    let tr_vars = [];
+    let tr_methods = ['drink()'];
+    let tr_code = 'public interface Drinkable {\n' +
+        '\tvoid drink();\n' +
+        '}\n';
+    return new Clazz('Drinkable', 'I', '', tr_vars, tr_methods, tr_code);
 }
 
+function getWine() {
+    let tr_vars = [];
+    let tr_methods = ['drink()'];
+    let tr_code = 'public class Wine extends Product implements Drinkable{\n' +
+        '\t@Override\n' +
+        '\tpublic void drink() {\n' +
+        '\n' +
+        '\t}\n' +
+        '}\n';
+    return new Clazz('Wine', 'C', 'Drinkable, Product', tr_vars, tr_methods, tr_code);
+}
+
+function getCandy() {
+    let tr_vars = [];
+    let tr_methods = ['setSweetness()', 'getSweetness()'];
+    let tr_code = 'public class Candy extends Product{\n' +
+        '\tString sweetness;\n' +
+        '\n' +
+        '\tpublic String getSweetness() {\n' +
+        '\t\treturn sweetness;\n' +
+        '\t}\n' +
+        '\n' +
+        '\tpublic Candy setSweetness(String sweetness) {\n' +
+        '\t\tthis.sweetness = sweetness;\n' +
+        '\t\treturn this;\n' +
+        '\t}\n' +
+        '}\n';
+    return new Clazz('Candy', 'C', 'Product', tr_vars, tr_methods, tr_code);
+}
+
+function getProduct() {
+    let tr_vars = [];
+    let tr_methods = ['getName()', 'setName()'];
+    let tr_code = 'public class Product {\n' +
+        '\tString name;\n' +
+        '\tString price;\n' +
+        '\n' +
+        '\tpublic String getName() {\n' +
+        '\t\treturn name;\n' +
+        '\t}\n' +
+        '\n' +
+        '\tpublic Product setName(String name) {\n' +
+        '\t\tthis.name = name;\n' +
+        '\t\treturn this;\n' +
+        '\t}\n' +
+        '\n' +
+        '\tpublic String getPrice() {\n' +
+        '\t\treturn price;\n' +
+        '\t}\n' +
+        '\n' +
+        '\tpublic Product setPrice(String price) {\n' +
+        '\t\tthis.price = price;\n' +
+        '\t\treturn this;\n' +
+        '\t}\n' +
+        '}\n';
+    return new Clazz('Product', 'C', '', tr_vars, tr_methods, tr_code);
+}
