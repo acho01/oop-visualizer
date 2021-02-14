@@ -33,7 +33,7 @@ function type(text, elementId) {
 }
 
 function hideOverlay() {
-    let audio = new Audio("../resources/audio/close.mp3");
+    let audio = new Audio("resources/audio/close.mp3");
     audio.play();
     document.querySelector("#overlay").style.display='none';
 }
